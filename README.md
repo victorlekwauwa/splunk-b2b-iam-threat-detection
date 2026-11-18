@@ -57,9 +57,11 @@ Executive Overview: Security Event Distribution by Action
 index="b2b_iam"
 | stats count by action
 
-##DASHBOARD & VALIDATION PROOF
-HEC Token & Index Configuration: ![HEC Setup](screenshots/hec_token_setup.png)
-REST API Event Injection ( code: 0 ): ![Curl Simulation]
-(screenshots/curl_simulation_output.png)
-B2B IAM Threat Monitoring Dashboard: ![Dashboard Overview]
-(screenshots/dashboard_overview.png)
+## Dashboard & Validation Proof
+
+* **HEC Token & Index Configuration:**  
+  ![HEC Setup](1%20token%20for%20HEC.png)
+* **REST API Event Injection:**  
+  ![Curl Simulation](3%20the%20attcking%20and%20testing%20splunk%20...)
+* **B2B IAM Threat Monitoring Dashboard:**  
+  ![Dashboard Overview](5.setting%20up%20the%20dashbaord%20splunk...)
