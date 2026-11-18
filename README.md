@@ -13,6 +13,7 @@ This project demonstrates an end-to-end, pre-production SIEM log ingestion and t
 **Pre-Production Telemetry Simulation**
 To validate schema-on-read JSON field extraction and SPL detection logic prior to live backend
 integration, synthetic attack payloads were injected via REST API ( curl ):
+
 **1. Brute-Force Credential Stuffing ( tenant_alpha )*
 for i in {1..6}; do
 curl -k "https://localhost:8088/services/collector/event" \
