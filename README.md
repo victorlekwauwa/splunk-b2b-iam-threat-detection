@@ -60,8 +60,8 @@ index="b2b_iam"
 ## Dashboard & Validation Proof
 
 * **HEC Token & Index Configuration:**  
-  ![HEC Setup](1%20token%20for%20HEC.png)
+  ![HEC Setup](3%20the%20attcking%20and%20testing%20splunk%20...)
 * **REST API Event Injection:**  
-  ![Curl Simulation](3%20the%20attcking%20and%20testing%20splunk%20...)
+  ![Curl Simulation](4%20testing%20the%20splunk.and%20custom%20r...)
 * **B2B IAM Threat Monitoring Dashboard:**  
   ![Dashboard Overview](5.setting%20up%20the%20dashbaord%20splunk...)
