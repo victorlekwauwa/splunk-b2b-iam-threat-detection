@@ -65,3 +65,8 @@ index="b2b_iam"
   ![Curl Simulation](https://github.com/victorlekwauwa/splunk-b2b-iam-threat-detection/blob/main/4%20testing%20the%20splunk.and%20custom%20rule%20.png)
 * **B2B IAM Threat Monitoring Dashboard:**  
   ![Dashboard Overview](https://github.com/victorlekwauwa/splunk-b2b-iam-threat-detection/blob/main/5.setting%20up%20the%20dashbaord%20splunk%20for%20HEC.png)
+
+  ## Project Roadmap
+* **Phase 1 (Current):** Splunk Enterprise SIEM ingestion, JSON telemetry simulation, and SPL detection rules.
+* **Phase 2 (Upcoming):** Wazuh integration for endpoint telemetry correlation and automated active response playbooks.
+  
