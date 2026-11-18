@@ -64,4 +64,4 @@ index="b2b_iam"
 * **REST API Event Injection:**  
   ![Curl Simulation](https://github.com/victorlekwauwa/splunk-b2b-iam-threat-detection/blob/main/4%20testing%20the%20splunk.and%20custom%20rule%20.png)
 * **B2B IAM Threat Monitoring Dashboard:**  
-  ![Dashboard Overview]()
+  ![Dashboard Overview](https://github.com/victorlekwauwa/splunk-b2b-iam-threat-detection/blob/main/5.setting%20up%20the%20dashbaord%20splunk%20for%20HEC.png)
