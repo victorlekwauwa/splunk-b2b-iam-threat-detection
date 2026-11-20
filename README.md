@@ -4,6 +4,13 @@ Project Overview
 
 This project demonstrates an end-to-end, pre-production SIEM log ingestion and threat detection pipeline built on Splunk Enterprise (Ubuntu Linux). Designed to monitor a multi-tenant B2B Identity and Access Management (IAM) application, the architecture ingests structured JSON telemetry over HTTPS via Splunk's HTTP Event Collector (HEC) and applies SPL (Search Processing Language) correlation rules to detect authentication abuse, privilege escalation, and cross-tenant isolation breaches.
 
+![Project Architecture](docs/architecture.png)
+
+### Project Phases
+- **Phase 1:** B2B IAM Threat Detection Pipeline via Splunk HTTP Event Collector (HEC) *(documented below)*
+- **Phase 2:** [Windows Endpoint Telemetry to Linux Wazuh Manager (Manager-Only)](./phase-2-wazuh-agent-manager/README.md)
+- **Phase 3:** Splunk Enterprise Indexing, Correlation & SOC Dashboards *(In Progress)*
+
 **Architecture & Security Controls**
 **SIEM Platform:** Splunk Enterprise deployed on Ubuntu Linux.
 **Data Isolation:** Dedicated b2b_iam index to segregate application security telemetry from host OS logs and optimize daily license ingestion limits.
@@ -67,6 +74,6 @@ index="b2b_iam"
   ![Dashboard Overview](https://github.com/victorlekwauwa/splunk-b2b-iam-threat-detection/blob/main/5.setting%20up%20the%20dashbaord%20splunk%20for%20HEC.png)
 
   ## Project Roadmap
-* **Phase 1 (Current):** Splunk Enterprise SIEM ingestion, JSON telemetry simulation, and SPL detection rules.
-* **Phase 2 (Upcoming):** Wazuh integration for endpoint telemetry correlation and automated active response playbooks.
-  
+- **Phase 1 (Completed):** B2B IAM threat detection via Splunk HTTP Event Collector (HEC), JSON telemetry simulation, and SPL correlation rules.
+- **Phase 2 (Completed):** Windows endpoint telemetry to Linux Wazuh Manager (`v4.14.10`) in a manager-only setup writing structured alerts to `/var/ossec/logs/alerts/alerts.json` ([Phase 2 Documentation](./phase-2-wazuh-agent-manager/README.md)).
+- **Phase 3 (Next):** Splunk Enterprise indexing of `alerts.json`, unified SPL correlation rules, SOC dashboards, and incident response playbooks.
